@@ -1,0 +1,53 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "clic appera script", HidePremium = false, SaveConfig = true, ConfigFolder = "ux"})
+
+local HOMETab = Window:MakeTab({
+    Name = "HOME",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = Tab:AddSection({
+    Name = "welcome to scriptappera lets go to Auto clicker"
+})
+
+Tab:AddButton({
+    Name = "Auto clicker",
+    Callback = function()
+              print("Auto clicker")
+      end    
+})
+
+Tab:AddToggle({
+    Name = "new server",
+    Default = false,
+    Callback = function (newserver)
+        print(Value)
+    end    
+})
+
+
+
+--[[
+Name = <new server> - The name of the toggle.
+Default = <fales> - The default value of the toggle.
+Callback = <newserver> - The function of the toggle.
+]]
+--[[
+Name = <Auto clicker> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+--[[
+Name = <string> - The name of the section.
+]]
+
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+
+
+
+OrionLib:Destroy()
